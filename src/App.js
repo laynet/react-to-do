@@ -16,8 +16,14 @@ class App extends Component {
            };
     }
 
+    deleteToDo(e) {
+      const newToDos = this.state.todos.filter();
+      this.setState({  })
+    }
+
+
     handleChange(e) {
-      this.setState({ newTodoDescription: e.target.value })
+      this.setState({ newTodoDescription: e.target.value });
     }
 
     handleSubmit(e) {
@@ -33,6 +39,8 @@ class App extends Component {
       todo.isCompleted = todo.isCompleted ? false : true;
       this.setState({ todos: todos });
     }
+
+
 
     render() {
        return (
